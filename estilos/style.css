@@ -142,12 +142,18 @@ border-bottom: 3px solid #3F1883;
     padding: 5px 10px 5px 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    
+    box-shadow: #3F1883 4px 4px 0px;
     font-family: retroTexto;
-   
+    transition: transform 250ms, box-shadow 250ms;
 } 
-
-
+button:active{
+    transform: translateY(4px) translateX(4px);
+    box-shadow:#3F1883 0px 0px 0px;
+}
+.logo:hover{
+    transform: translateX(10px);
+    transition: transform 200ms;
+}
 .articulos article:hover{
     transform:scale(1.2);
 }
