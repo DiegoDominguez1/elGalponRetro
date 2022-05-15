@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    
+    <title>EL Galpón Retro</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <a href="../index.html"><img class="logo" src="../img/logo.gif" alt="Logo"></a>
+       </figure>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="juegos.html">Juegos</a></li> 
+                <li><a href="consolas.html">Consolas</a></li>
+                <li><a href="electronica.html">Electrónica</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="seccionContacto">
+            <h1>Contacto</h1>
+            <article>
+                <form class ="formulario" action="#">
+                    <label class="label" for="nombreyapellido">Nombre y apellido
+                        <input class="input" type="text" placeholder="Nombre y apellido completo" name="nombreyapellido">
+                    </label>
+        
+                    <label class="label" for="email">Ingrese su email
+                        <input class="input" type="email" placeholder="aaa@gmail.com" required name="email">
+                    </label>
+                    
+                    <label class="label" for="consulta">Consulta
+                        <textarea class="input" placeholder="Escriba su consulta aquí..." name="consulta"></textarea>
+                    </label>
+                    
+                    
+                    <p class="texto">Que le intersa más?</p>
+                    <select name="letra" id="letra"> 
+                        <option class="texto" value="juegos">Juegos</option>
+                        <option class="texto" value="consolas">Consolas</option>
+                        <option class="texto" value="electronica">Electrónica</option>
+                    </select>
+                    
+                        <div class="texto">Querés recibir información sobre nosotros?
+                            <input type="checkbox" name="acepta" value="1">
+                        </div>
+
+                    <button class="btnComprar" type="submit" value="Enviar consulta">Enviar consulta</button>
+                    <button class="btnComprar" type="reset" value="Borrar">Borrar</button>    
+                </form>
+            </article>
+        </section>
+      </main>
+
+      <footer>
+        <div class="redes">
+            <article>
+                <p class="titulo">Redes sociales</p>
+                <div>
+                    <img src="../img/facebook.png" alt="facebook" class="imagenesFooter">
+                    <p>ElGalponRetro</p>
+                </div>
+                <div>
+                    <img src="../img/instagram.png" alt="instagram" class="imagenesFooter">
+                    <p>@ElGalponRetro</p>
+                </div>
+            </article>
+        </div>
+        <div class="contacto">
+            <article>
+                <p class="titulo">Contacto</p>
+                <div>
+                    <img src="../img/whatsapp.png" alt="whatsapp" class="imagenesFooter">
+                    <p>011-51583245</p>
+                </div>
+                <div>
+                    <img src="../img/gmail.png" alt="email" class="imagenesFooter">
+                    <p>elgalponretro@gmail.com</p>
+                </div>
+            </article>
+        </div>
+         <p class="copy">Copyright © 2022 El Galpón Retro Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
