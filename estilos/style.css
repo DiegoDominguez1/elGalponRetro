@@ -155,7 +155,7 @@ button:active{
     transform: translateX(10px);
     transition: transform 200ms;
 }
-.articulos article:hover{
+.articulos .card:hover{
     transform:scale(1.2);
 }
 .imagenArticulo:hover{
