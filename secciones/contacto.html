@@ -34,38 +34,47 @@
     <main>
         <section class="seccionContacto">
             <h1>Contacto</h1>
-            <article>
-                <form class ="formulario" action="#">
-                    <label class="label" for="nombreyapellido">Nombre y apellido
-                        <input class="input" type="text" placeholder="Nombre y apellido completo" name="nombreyapellido">
-                    </label>
-        
-                    <label class="label" for="email">Ingrese su email
-                        <input class="input" type="email" placeholder="aaa@gmail.com" required name="email">
-                    </label>
-                    
-                    <label class="label" for="consulta">Consulta
-                        <textarea class="input" placeholder="Escriba su consulta aquí..." name="consulta"></textarea>
-                    </label>
-                    
-                    
-                    <p class="texto">Que le intersa más?</p>
-                    <select name="letra" id="letra"> 
+           <article>
+               
+               <form class="formulario">
+                   <div class="mb-3">
+                       <label class="form-label" for="specificSizeInputName">Nombre y Apellido</label>
+                       <input type="text" class="form-control" id="specificSizeInputName" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+                
+                <div class="mb-3 texto">
+                  
+                    <select class="form-select" id="specificSizeSelect">
+                        <option selected>¿Que le intersa más?</option>
                         <option class="texto" value="juegos">Juegos</option>
                         <option class="texto" value="consolas">Consolas</option>
                         <option class="texto" value="electronica">Electrónica</option>
-                    </select>
-                    
-                        <div class="texto">Querés recibir información sobre nosotros?
-                            <input type="checkbox" name="acepta" value="1">
-                        </div>
-
+                  </select>
+                </div>
+                <div class="col-auto texto">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                        <label class="form-check-label" for="autoSizingCheck2">
+                            ¿Querés recibir información sobre nosotros?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-auto">
                     <button class="btnComprar" type="submit" value="Enviar consulta">Enviar consulta</button>
-                    <button class="btnComprar" type="reset" value="Borrar">Borrar</button>    
-                </form>
-            </article>
+                    <button class="btnComprar" type="reset" value="Borrar">Borrar</button>  
+                </div>
+            </form>
+        </article> 
         </section>
-      </main>
+    </main>
 
       <footer>
         <div class="redes">
