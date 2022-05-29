@@ -1,0 +1,54 @@
+/*INDEX*/
+.principal{
+    background-image: url(../img/fondo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    height: 58vh; 
+    border-bottom: 3px solid #3F1883; 
+
+    h1{
+        font-size: 90px;
+        color:#fff;
+        font-family: titulo;
+        text-shadow: 10px 1px 5px black;
+        text-align: center;
+        padding: 50px 0 0 0;
+        text-transform: uppercase;  
+    }    
+    h2{
+        grid-area: principal;
+        font-size: 20px;
+        color: #fff;
+        font-family: retroTexto;
+        text-shadow: 5px 1px 2px black;
+        text-align:center;
+    }    
+
+}    
+    /*VIDEOS*/
+    .ultima{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        
+        .youtube{
+            width:40vw;
+            height:45.4vh;
+        }
+        .videos{
+            font-size: 30px;
+            font-family: titulo;
+            text-shadow: 1px 1px 2px #fff;
+            text-align: center;
+            padding: 18px 0 5px 0;
+        }
+        .videosRelacionados{
+            width:40vw;
+            height:46.8vh;
+            border: 5px solid #3F1883;
+        }    
+    }
+    
+    

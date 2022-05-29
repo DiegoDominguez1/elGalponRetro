@@ -1,0 +1,68 @@
+/*CONTACTO--FORMULARIO*/
+.seccionContacto{
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.2fr 3fr;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+        "titulo"
+        "formulario";
+    grid-gap: 1rem;
+
+        h1{
+            grid-area: titulo;
+            font-size: 30px;
+            font-family: titulo;
+            text-shadow: 1px 1px 2px #fff;
+            text-align: center;
+            padding: 18px 0 5px 0;
+        }
+
+        .formulario{
+            grid-area: formulario;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-family: retroTexto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .label{
+                display: flex;
+                padding: 5px 0 5px 0;
+                flex-direction: column;
+                text-align: center;
+            }
+            .input{
+                padding: 5px 0 5px 0;
+            }
+            .texto{
+                padding: 5px 0 5px 0;
+                font-family: retroTexto;
+            }
+            .btn{
+                border: 0.5px solid #000000;
+                border-radius: 5px;
+                padding: 5px 10px 5px 10px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                box-shadow: #3F1883 4px 4px 0px;
+                font-family: retroTexto;
+                background-image: linear-gradient(to right,#ffffff 50%,rgb(254, 240, 30) 50%);
+                 background-size: 200%;
+                background-repeat: no-repeat;
+                background-position: left;
+                transition: transform 250ms, box-shadow 250ms, background-position .5s ease;
+                    
+                &:hover{
+                    background-position: right;
+                } 
+                &:active{
+                transform: translateY(4px) translateX(4px);
+                        box-shadow:#3F1883 0px 0px 0px;
+                }
+            } 
+        }
+}
