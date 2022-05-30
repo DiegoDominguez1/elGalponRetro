@@ -340,13 +340,13 @@ footer {
 
 /*CONTACTO--FORMULARIO*/
 .seccionContacto {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 0.2fr 3fr;
       grid-template-rows: 0.2fr 3fr;
   padding: 10px;
-  display: -ms-grid;
-  display: grid;
   justify-items: center;
       grid-template-areas: "titulo" "formulario";
   grid-gap: 1rem;

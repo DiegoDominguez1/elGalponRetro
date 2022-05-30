@@ -1,9 +1,10 @@
 /*CONTACTO--FORMULARIO*/
 .seccionContacto{
+    display: grid;
     grid-template-columns: 1fr ;
     grid-template-rows: 0.2fr 3fr;
     padding: 10px;
-    display: grid;
+    
     justify-items: center;
     grid-template-areas:
         "titulo"
