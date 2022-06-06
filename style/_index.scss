@@ -34,8 +34,7 @@
         padding-bottom: 20px;
         
         .youtube{
-            width:40vw;
-            height:45.4vh;
+            @include sizes (40vw, 45.4vh);
         }
         .videos{
             font-size: 30px;

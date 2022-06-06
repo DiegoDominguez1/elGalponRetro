@@ -15,6 +15,31 @@
           box-sizing: border-box;
 }
 
+/*MAPAS REDES y CONTACTOS*/
+.red-facebook {
+  color: yellow;
+}
+
+.red-instagram {
+  color: #34f834;
+}
+
+.contactos-whatsapp {
+  color: yellow;
+}
+
+.contactos-gmail {
+  color: #34f834;
+}
+
+/*EXTEND*/
+.tituloFooter, .redes, .contacto {
+  color: #fff;
+  font-family: retroTexto;
+  text-shadow: 1px 1px 3px black;
+}
+
+/*MIXINS*/
 /*HEADER*/
 .logo {
   height: 100px;
@@ -65,8 +90,8 @@
 
 /*FOOTER*/
 .imagenesFooter {
-  width: 5%;
-  height: 5%;
+  width: 4w;
+  height: 4vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,9 +118,6 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  color: #fff;
-  font-family: retroTexto;
-  text-shadow: 1px 1px 3px black;
   margin-left: 10%;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -110,7 +132,6 @@ footer {
 .redes article .titulo {
   padding: 0 0 20px 0;
   font-size: 20px;
-  color: #fff;
 }
 
 .redes p {
@@ -124,9 +145,6 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  color: #fff;
-  font-family: retroTexto;
-  text-shadow: 1px 1px 3px black;
   margin-top: 18px;
 }
 
@@ -139,7 +157,6 @@ footer {
 .contacto article .titulo {
   padding: 0 0 20px 0;
   font-size: 20px;
-  color: #fff;
 }
 
 .contacto p {
@@ -277,6 +294,10 @@ footer {
 .articulos .card:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
 }
 
 .articulos .card .imagenArticulo {
@@ -297,6 +318,10 @@ footer {
 .articulos .card .imagenArticulo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
 }
 
 .articulos .card h3 {
