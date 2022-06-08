@@ -88,7 +88,7 @@ $contactos:(
     @include sizes (4w, 4vh);
     display: flex;
     margin-bottom: 10px;
-    margin-right: 4px
+    margin-right: 4px;
   
 }        
 footer{
@@ -102,7 +102,6 @@ footer{
 }        
 
 .redes{
-    @extend.tituloFooter;
     display: flex;
     flex-wrap: wrap;
     margin-left: 10%;
@@ -110,42 +109,47 @@ footer{
     margin-bottom: 15px;
 
     article{
+        p{
+        @extend.tituloFooter;
+        }
         div{
-        display: flex;    
-    }       
-    .titulo{
+        display: flex; 
+        p{
+            font-size: 15px;    
+            margin-top: 4px;
+        }     
+        }       
+        .titulo{
         padding: 0 0 20px 0;
-        font-size: 20px;
-        
-    }       
+        font-size: 20px;   
+        }       
     }
-    p{
-    font-size: 15px;    
-    margin-top: 4px;
-    } 
+   
 }        
 
 .contacto{
-    @extend.tituloFooter;
     display: flex;
     flex-wrap: wrap;
     margin-top: 18px;
     
     article{ 
+        p{
+            @extend.tituloFooter;
+        }
         div{
-        display: flex;    
+            display: flex;
+        p{
+            padding-top: 4px;
+            font-size: 15px;
+        }    
         }
         .titulo{
         padding: 0 0 20px 0;    
-        font-size: 20px;
-        
-    }     
-}    
-p{
-    padding-top: 4px;
-    font-size: 15px;
-}     
-}    
+        font-size: 20px;    
+        }     
+    }    
+         
+    }    
 
 .copy{
     display: flex;

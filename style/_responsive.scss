@@ -10,7 +10,9 @@
     .principal h2{
             grid-area: principal;
             font-size: 20px;
-    }    
+    }   
+    
+    /*ARTICULOS*/
     .articulos{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.2fr 1fr 1fr 1fr;
@@ -37,24 +39,29 @@
         }
         }
     }  
-
-    footer{ 
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 0.5fr;
-    }
-    .contacto article .titulo,.redes article .titulo{
-        text-align: center;
-    }  
-    .redes article div,.contacto article div{
+    /*FOOTER*/
+    footer{
+        grid-template-columns: none;
         justify-content: center;
-    } 
-    .redes{
-        margin-left: 5%;
-    }
-    .copy{
-        justify-content: center;
-        align-items:center;
-        margin-top: 0;
+        .redes{
+            justify-content: center;
+            margin-left: 0;
+            article{
+                text-align: center;
+                div{
+                    justify-content: center;
+                }
+            }
+        }
+        .contacto{
+            justify-content: center; 
+            article{
+                text-align: center;
+                div{
+                    justify-content: center;
+                }
+            }
+        }
     }
     .articulos h1,.seccionContacto h1,.articulos h2{
          font-size: 25px;
@@ -62,6 +69,8 @@
     .label,.input,.texto{
           font-size: 14px;
     }
+
+    /*VIDEO*/
     .ultima{
         .videosRelacionados{
             width:75vw;
@@ -115,24 +124,30 @@
             }
             }
     }  
-    footer{ 
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 0.5fr;
-    }
-    .contacto article .titulo,.redes article .titulo{
-        text-align: center;
-    }  
-    .redes article div,.contacto article div{
+   /*FOOTER*/
+   footer{
+        grid-template-columns: none;
         justify-content: center;
-    } 
-    .redes{
-        margin-left: 0;
-    }
-    .copy{
-        justify-content: center;
-        align-items:center;
-        margin-top: 0;
-    }
+        .redes{
+            justify-content: center;
+            margin-left: 0;
+            article{
+                text-align: center;
+                div{
+                    justify-content: center;
+                }
+            }
+        }
+        .contacto{
+            justify-content: center; 
+            article{
+                text-align: center;
+                div{
+                    justify-content: center;
+                }
+            }
+        }
+    }    
     .articulos h1,.seccionContacto h1,.articulos h2{
          font-size: 25px;
     }
