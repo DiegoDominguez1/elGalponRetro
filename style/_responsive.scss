@@ -10,8 +10,14 @@
     .principal h2{
             grid-area: principal;
             font-size: 20px;
-    }   
-    
+    }  
+    .buscador{
+        .input-group{
+            .lupa{
+                width: 2.5vw;
+            }
+        }
+    }
     /*ARTICULOS*/
     .articulos{
         grid-template-columns: 1fr 1fr 1fr;
@@ -28,7 +34,7 @@
             
             .imagenArticulo{
                 width: 28vw;
-                height: 22vh;
+                height: 20vh;
                 
             &:hover{
                 transform:scale(106%);
@@ -95,6 +101,13 @@
             grid-area: principal;
             font-size: 15px;
     }    
+    .buscador{
+        .input-group{
+                .lupa{
+                    width: 3.5vw;
+                }
+        }
+    }
     .articulos{
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -113,7 +126,7 @@
                 
                 .imagenArticulo{
                     width: 58vw;
-                    height: 30vh;
+                    height: 26vh;
 
                     &:hover{
                         transform:scale(104%);
@@ -164,4 +177,10 @@
             }  
         }
     } 
+}
+.suscripcion{
+    font-size: 12px;
+    p{
+        font-size: 11px;
+    }
 }

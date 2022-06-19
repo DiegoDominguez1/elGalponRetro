@@ -145,7 +145,7 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 .contacto article div {
@@ -192,7 +192,78 @@ footer {
   padding: 18px 0 5px 0;
 }
 
-/*INDEX*/
+main {
+  background-color: #f4f4f4;
+}
+
+.buscador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.buscador .input-group {
+  width: 55vw;
+  border-color: gray;
+}
+
+.buscador .input-group .form-control {
+  width: 15vw;
+  height: 45px;
+  border-radius: 8px;
+  font-family: retroTexto;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: #3F1883 2px 2px 0px;
+          box-shadow: #3F1883 2px 2px 0px;
+}
+
+.buscador .input-group .btn {
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: #3F1883 2px 2px 0px;
+          box-shadow: #3F1883 2px 2px 0px;
+  font-family: retroTexto;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffffff), color-stop(50%, #fef01e));
+  background-image: linear-gradient(to right, #ffffff 50%, #fef01e 50%);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: left;
+  -webkit-transition: background-position .5s ease, -webkit-transform 250ms, -webkit-box-shadow 250ms;
+  transition: background-position .5s ease, -webkit-transform 250ms, -webkit-box-shadow 250ms;
+  transition: transform 250ms, box-shadow 250ms, background-position .5s ease;
+  transition: transform 250ms, box-shadow 250ms, background-position .5s ease, -webkit-transform 250ms, -webkit-box-shadow 250ms;
+}
+
+.buscador .input-group .btn:hover {
+  background-position: right;
+}
+
+.buscador .input-group .btn:active {
+  -webkit-transform: translateY(2px) translateX(2px);
+          transform: translateY(2px) translateX(2px);
+  -webkit-box-shadow: #3F1883 0px 0px 0px;
+          box-shadow: #3F1883 0px 0px 0px;
+}
+
+.buscador .input-group .lupa {
+  width: 1.5vw;
+  opacity: 80%;
+}
+
 .principal {
   background-image: url(../img/fondo.jpg);
   background-attachment: fixed;
@@ -220,7 +291,6 @@ footer {
   text-align: center;
 }
 
-/*VIDEOS*/
 .ultima {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,6 +325,77 @@ footer {
   width: 40vw;
   height: 46.8vh;
   border: 5px solid #3F1883;
+}
+
+.suscripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 30vh;
+  background: url(../img/suscripcion.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: retroTexto;
+}
+
+.suscripcion .suscribirme {
+  border: 0.5px solid #000000;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: #3F1883 4px 4px 0px;
+          box-shadow: #3F1883 4px 4px 0px;
+  font-family: retroTexto;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffffff), color-stop(50%, #fef01e));
+  background-image: linear-gradient(to right, #ffffff 50%, #fef01e 50%);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: left;
+  -webkit-transition: background-position .5s ease, -webkit-transform 250ms, -webkit-box-shadow 250ms;
+  transition: background-position .5s ease, -webkit-transform 250ms, -webkit-box-shadow 250ms;
+  transition: transform 250ms, box-shadow 250ms, background-position .5s ease;
+  transition: transform 250ms, box-shadow 250ms, background-position .5s ease, -webkit-transform 250ms, -webkit-box-shadow 250ms;
+}
+
+.suscripcion .suscribirme:hover {
+  background-position: right;
+}
+
+.suscripcion .suscribirme:active {
+  -webkit-transform: translateY(4px) translateX(4px);
+          transform: translateY(4px) translateX(4px);
+  -webkit-box-shadow: #3F1883 0px 0px 0px;
+          box-shadow: #3F1883 0px 0px 0px;
+}
+
+.suscripcion .correo {
+  width: 35vw;
+  border-radius: 8px;
+  font-family: retroTexto;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.suscripcion p {
+  padding: 10px;
 }
 
 /*ARTICULOS*/
@@ -473,6 +614,9 @@ footer {
     grid-area: principal;
     font-size: 20px;
   }
+  .buscador .input-group .lupa {
+    width: 2.5vw;
+  }
   /*ARTICULOS*/
   .articulos {
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -489,7 +633,7 @@ footer {
   }
   .articulos .card .imagenArticulo {
     width: 28vw;
-    height: 22vh;
+    height: 20vh;
   }
   .articulos .card .imagenArticulo:hover {
     -webkit-transform: scale(106%);
@@ -562,6 +706,9 @@ footer {
     grid-area: principal;
     font-size: 15px;
   }
+  .buscador .input-group .lupa {
+    width: 3.5vw;
+  }
   .articulos {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -577,7 +724,7 @@ footer {
   }
   .articulos .card .imagenArticulo {
     width: 58vw;
-    height: 30vh;
+    height: 26vh;
   }
   .articulos .card .imagenArticulo:hover {
     -webkit-transform: scale(104%);
@@ -636,5 +783,13 @@ footer {
     width: 85vw;
     height: 35.4vh;
   }
+}
+
+.suscripcion {
+  font-size: 12px;
+}
+
+.suscripcion p {
+  font-size: 11px;
 }
 /*# sourceMappingURL=style.css.map */

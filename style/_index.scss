@@ -1,4 +1,4 @@
-/*INDEX*/
+
 .principal{
     background-image: url(../img/fondo.jpg);
     background-attachment: fixed;
@@ -25,29 +25,83 @@
     }    
 
 }    
-    /*VIDEOS*/
-    .ultima{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 20px;
+    
+.ultima{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
         
-        .youtube{
-            @include sizes (40vw, 45.4vh);
-        }
-        .videos{
-            font-size: 30px;
-            font-family: $titulos;
-            text-shadow: 1px 1px 2px #fff;
-            text-align: center;
-            padding: 18px 0 5px 0;
-        }
-        .videosRelacionados{
-            width:40vw;
-            height:46.8vh;
-            border: 5px solid $color;
-        }    
+    .youtube{
+        @include sizes (40vw, 45.4vh);
     }
+    .videos{
+        font-size: 30px;
+        font-family: $titulos;
+        text-shadow: 1px 1px 2px #fff;
+        text-align: center;
+        padding: 18px 0 5px 0;
+    }
+    .videosRelacionados{
+        width:40vw;
+        height:46.8vh;
+        border: 5px solid $color;
+    }    
+}
+
+.suscripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30vh;
+    background: url(../img/suscripcion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: $retro;
+
+        .suscribirme{
+            border: 0.5px solid #000000;
+            border-radius: 5px;
+            padding: 5px 10px 5px 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-shadow: $color 4px 4px 0px;
+            font-family: $retro;
+            background-image: linear-gradient(to right,#ffffff 50%,rgb(254, 240, 30) 50%);
+            background-size: 200%;
+            background-repeat: no-repeat;
+            background-position: left;
+            transition: transform 250ms, box-shadow 250ms, background-position .5s ease;
+            
+            &:hover{
+                background-position: right;
+            }
+            
+            &:active{
+                transform: translateY(4px) translateX(4px);
+                box-shadow: $color 0px 0px 0px;
+            }
+        } 
+
+        .correo{
+            width: 35vw;
+            border-radius: 8px;
+            font-family: $retro;
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            padding: 5px 10px 5px 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        p{
+           padding: 10px; 
+        }
+    
+}
     
     
