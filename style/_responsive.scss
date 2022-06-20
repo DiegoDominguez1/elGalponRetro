@@ -1,5 +1,5 @@
 
-@media screen and (min-width:500px) and (max-width: 800px){
+@media screen and (min-width:750px) and (max-width: 992px){
     
     .logo{
         height: 95px;
@@ -11,14 +11,7 @@
             grid-area: principal;
             font-size: 20px;
     }  
-    .buscador{
-        .input-group{
-            .lupa{
-                width: 2.5vw;
-            }
-        }
-    }
-    /*ARTICULOS*/
+    
     .articulos{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.2fr 1fr 1fr 1fr;
@@ -30,11 +23,54 @@
         align-items: center;
 
         .card{
-            width: 30vw;
+            width: 28vw;
             
             .imagenArticulo{
-                width: 28vw;
-                height: 20vh;
+                width: 26vw;
+                height: 24vh;
+                
+            &:hover{
+                transform:scale(106%);
+            }
+            }
+        &:hover{
+            transform:scale(110%);
+        }
+        }
+    }  
+ 
+    .ultima{
+        .videosRelacionados{
+            width:55vw;
+            height:46.8vh;
+            
+            .youtube{
+                width:55vw;
+                height:45.4vh;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:500px) and (max-width: 750px){
+
+    .articulos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "titulo titulo"
+            "img img"
+            "img img"
+            "img img"
+            "img img";
+        align-items: center;
+
+        .card{
+            width: 38vw;
+            
+            .imagenArticulo{
+                width: 36vw;
+                height: 24vh;
                 
             &:hover{
                 transform:scale(106%);
@@ -44,8 +80,7 @@
             transform:scale(112%);
         }
         }
-    }  
-    /*FOOTER*/
+    }
     footer{
         grid-template-columns: none;
         justify-content: center;
@@ -76,7 +111,7 @@
           font-size: 14px;
     }
 
-    /*VIDEO*/
+ 
     .ultima{
         .videosRelacionados{
             width:75vw;
@@ -89,6 +124,10 @@
         }
     }
 }
+
+
+
+
 @media only screen and (max-width: 500px){
 
     .logo{
@@ -101,13 +140,7 @@
             grid-area: principal;
             font-size: 15px;
     }    
-    .buscador{
-        .input-group{
-                .lupa{
-                    width: 3.5vw;
-                }
-        }
-    }
+
     .articulos{
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -137,7 +170,7 @@
             }
             }
     }  
-   /*FOOTER*/
+ 
    footer{
         grid-template-columns: none;
         justify-content: center;
@@ -182,5 +215,19 @@
     font-size: 12px;
     p{
         font-size: 11px;
+    }
+}
+@media only screen and (max-width: 450px){
+
+
+    .articulos{
+        .card{
+            width: 70vw;
+            
+            .imagenArticulo{
+                width: 68vw;
+                height: 26vh;
+            }
+        }
     }
 }

@@ -13,27 +13,6 @@
     margin: 0;
     box-sizing: border-box;
 }    
-/*MAPAS REDES y CONTACTOS*/
-
-$redes:(
-    facebook: yellow,
-    instagram:  rgb(52, 248, 52),
-);
-@each $red, $colorRed in $redes {
-    .red-#{$red}{
-        color: $colorRed;
-    }
-}
-$contactos:(
-    whatsapp: yellow,
-    gmail:  rgb(52, 248, 52),
-);
-@each $conta, $colorContacto in $contactos {
-    .contactos-#{$conta}{
-        color: $colorContacto;
-    }
-}
-/*EXTEND*/
 
 .tituloFooter{
     color: #fff;
@@ -41,14 +20,12 @@ $contactos:(
     text-shadow: 1px 1px 3px black;
 }
 
-/*MIXINS*/
-
 @mixin sizes($width, $height){
     width: $width;
     height: $height;
 }    
 
-/*HEADER*/
+
 .logo{
     height: 100px;
     &:hover{
@@ -68,22 +45,23 @@ $contactos:(
     display: flex;
     align-self: flex-end;
     justify-content: end;
-    
-}     
-.nav-link{
-    font-size: 20px;
-    text-decoration: none;
-    color: #fff;
-    font-family: $retro;
-    text-shadow: 1px 1px 2px black;
-    margin-left: 15px;
-    &:hover{
-        color:yellow;
-        text-shadow: 1px 1px 8px yellow;
+    .navbar-nav{ 
+        .nav-link{
+            font-size: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-family: $retro;
+            text-shadow: 1px 1px 2px black;
+            margin-left: 15px;
+            &:hover{
+                color:yellow;
+                text-shadow: 1px 1px 8px yellow;
+            }    
+        } 
     }    
 }    
 
-/*FOOTER*/
+
 .imagenesFooter{
     @include sizes (4w, 4vh);
     display: flex;
@@ -161,7 +139,7 @@ footer{
     font-size: 10.5px;
     margin-top: 28%;
 }        
-/*H1 GENERAL*/
+
 .articulos h1{
     grid-area: titulo;
     font-size: 30px;
@@ -222,7 +200,7 @@ main{
         } 
         
         .lupa{
-            width: 1.5vw;
+            width: 22px;
             opacity:80%;
         }
     }

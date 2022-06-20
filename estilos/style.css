@@ -15,32 +15,12 @@
           box-sizing: border-box;
 }
 
-/*MAPAS REDES y CONTACTOS*/
-.red-facebook {
-  color: yellow;
-}
-
-.red-instagram {
-  color: #34f834;
-}
-
-.contactos-whatsapp {
-  color: yellow;
-}
-
-.contactos-gmail {
-  color: #34f834;
-}
-
-/*EXTEND*/
 .tituloFooter, .redes article p, .contacto article p {
   color: #fff;
   font-family: retroTexto;
   text-shadow: 1px 1px 3px black;
 }
 
-/*MIXINS*/
-/*HEADER*/
 .logo {
   height: 100px;
 }
@@ -74,7 +54,7 @@
           justify-content: end;
 }
 
-.nav-link {
+.collapse .navbar-nav .nav-link {
   font-size: 20px;
   text-decoration: none;
   color: #fff;
@@ -83,12 +63,11 @@
   margin-left: 15px;
 }
 
-.nav-link:hover {
+.collapse .navbar-nav .nav-link:hover {
   color: yellow;
   text-shadow: 1px 1px 8px yellow;
 }
 
-/*FOOTER*/
 .imagenesFooter {
   width: 4w;
   height: 4vh;
@@ -180,7 +159,6 @@ footer {
   margin-top: 28%;
 }
 
-/*H1 GENERAL*/
 .articulos h1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -260,7 +238,7 @@ main {
 }
 
 .buscador .input-group .lupa {
-  width: 1.5vw;
+  width: 22px;
   opacity: 80%;
 }
 
@@ -305,7 +283,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .ultima .youtube {
@@ -318,7 +296,7 @@ main {
   font-family: titulo;
   text-shadow: 1px 1px 2px #fff;
   text-align: center;
-  padding: 18px 0 5px 0;
+  padding: 40px 0 20px 0;
 }
 
 .ultima .videosRelacionados {
@@ -350,6 +328,7 @@ main {
   background-size: cover;
   color: #fff;
   font-family: retroTexto;
+  margin-top: 20px;
 }
 
 .suscripcion .suscribirme {
@@ -603,7 +582,7 @@ main {
           box-shadow: #3F1883 0px 0px 0px;
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
+@media screen and (min-width: 750px) and (max-width: 992px) {
   .logo {
     height: 95px;
   }
@@ -614,10 +593,6 @@ main {
     grid-area: principal;
     font-size: 20px;
   }
-  .buscador .input-group .lupa {
-    width: 2.5vw;
-  }
-  /*ARTICULOS*/
   .articulos {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -629,11 +604,47 @@ main {
             align-items: center;
   }
   .articulos .card {
-    width: 30vw;
+    width: 28vw;
   }
   .articulos .card .imagenArticulo {
-    width: 28vw;
-    height: 20vh;
+    width: 26vw;
+    height: 24vh;
+  }
+  .articulos .card .imagenArticulo:hover {
+    -webkit-transform: scale(106%);
+            transform: scale(106%);
+  }
+  .articulos .card:hover {
+    -webkit-transform: scale(110%);
+            transform: scale(110%);
+  }
+  .ultima .videosRelacionados {
+    width: 55vw;
+    height: 46.8vh;
+  }
+  .ultima .videosRelacionados .youtube {
+    width: 55vw;
+    height: 45.4vh;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+  .articulos {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 0.2fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "titulo titulo" "img img" "img img" "img img" "img img";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .articulos .card {
+    width: 38vw;
+  }
+  .articulos .card .imagenArticulo {
+    width: 36vw;
+    height: 24vh;
   }
   .articulos .card .imagenArticulo:hover {
     -webkit-transform: scale(106%);
@@ -643,7 +654,6 @@ main {
     -webkit-transform: scale(112%);
             transform: scale(112%);
   }
-  /*FOOTER*/
   footer {
     -ms-grid-columns: none;
         grid-template-columns: none;
@@ -684,7 +694,6 @@ main {
   .label, .input, .texto {
     font-size: 14px;
   }
-  /*VIDEO*/
   .ultima .videosRelacionados {
     width: 75vw;
     height: 46.8vh;
@@ -705,9 +714,6 @@ main {
   .principal h2 {
     grid-area: principal;
     font-size: 15px;
-  }
-  .buscador .input-group .lupa {
-    width: 3.5vw;
   }
   .articulos {
     -ms-grid-columns: 1fr;
@@ -734,7 +740,6 @@ main {
     -webkit-transform: scale(108%);
             transform: scale(108%);
   }
-  /*FOOTER*/
   footer {
     -ms-grid-columns: none;
         grid-template-columns: none;
@@ -791,5 +796,15 @@ main {
 
 .suscripcion p {
   font-size: 11px;
+}
+
+@media only screen and (max-width: 450px) {
+  .articulos .card {
+    width: 70vw;
+  }
+  .articulos .card .imagenArticulo {
+    width: 68vw;
+    height: 26vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
